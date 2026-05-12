@@ -11,6 +11,8 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright/java:v1.40.0-jammy
 
     steps:
       - uses: actions/checkout@v4
@@ -21,14 +23,6 @@ jobs:
           java-version: "17"
           distribution: "temurin"
           cache: maven
-
-      - name: Fix Ubuntu APT mirror issues
-        run: |
-          sudo rm -f /etc/apt/sources.list.d/google-chrome.list
-          sudo apt-get update || true
-
-      - name: Install Playwright browsers and dependencies
-        run: npx -y playwright@1.40.0 install --with-deps
 
       - name: Build and run tests
         run: mvn -B clean test
