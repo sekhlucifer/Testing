@@ -19,10 +19,11 @@ public class Base {
     @BeforeMethod
     public void setup() {
         playwright = Playwright.create();
+        boolean isHeadless = System.getenv("CI") != null || Boolean.parseBoolean(System.getProperty("headless", "false"));
         browsers = new Browser[]{
-            playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false)),
-            playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(false)),
-            playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(false))
+            playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(isHeadless)),
+            playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(isHeadless)),
+            playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(isHeadless))
         };
         for (Browser browser : browsers) {
             System.out.println("Launched browser: " + browser.browserType().name());
