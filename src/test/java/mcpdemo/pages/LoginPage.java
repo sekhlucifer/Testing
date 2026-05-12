@@ -21,7 +21,7 @@ public class LoginPage {
     }
     
     public void navigateTo(String url) {
-        page.navigate(url);
+        page.navigate(url, new Page.NavigateOptions().setWaitUntil(com.microsoft.playwright.options.WaitUntilState.DOMCONTENTLOADED));
     }
     
     public void enterUsername(String username) {

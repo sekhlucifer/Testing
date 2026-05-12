@@ -110,7 +110,6 @@ public class AdminPage {
     }
     
     public void addUser(String employeeName, String username, String password) {
-        clickAddButton();
         selectUserRole("Admin");
         selectStatus("Enabled");
         enterEmployeeName(employeeName);
@@ -118,7 +117,7 @@ public class AdminPage {
         enterPassword(password);
         enterConfirmPassword(password);
         clickSave();
-        takeScreenshot("addUser");
+        // Screenshot removed to avoid missing the toast notification
     }
 
     private void takeScreenshot(String stepName) {
