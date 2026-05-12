@@ -23,7 +23,7 @@ jobs:
           cache: maven
 
       - name: Install Playwright browsers and dependencies
-        uses: microsoft/playwright-github-action@v1
+        run: mvn test-compile exec:java -e -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install --with-deps"
 
       - name: Build and run tests
         run: mvn -B clean test
