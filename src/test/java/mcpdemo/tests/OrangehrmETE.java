@@ -120,7 +120,7 @@ public class OrangehrmETE extends Base {
         }
         Reporter.log("Clicking Add button", true);
         adminPage.clickAddButton();
-        
+
         // Use instance method page.waitForTimeout instead of static Page.waitForTimeout
         page.waitForTimeout(3000);
 

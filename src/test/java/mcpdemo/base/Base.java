@@ -8,19 +8,20 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 public class Base {
-    
+
     protected Playwright playwright;
     protected Browser browser;
     protected BrowserContext context;
     protected Page page;
-    
+
     protected static final String BASE_URL = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
-    
+
     @BeforeMethod
     @Parameters("browser")
     public void setup(@Optional("chromium") String browserName) {
         playwright = Playwright.create();
-        boolean isHeadless = System.getenv("CI") != null || Boolean.parseBoolean(System.getProperty("headless", "false"));
+        boolean isHeadless = System.getenv("CI") != null
+                || Boolean.parseBoolean(System.getProperty("headless", "true"));
         BrowserType.LaunchOptions options = new BrowserType.LaunchOptions().setHeadless(isHeadless);
 
         switch (browserName.toLowerCase()) {
@@ -40,7 +41,7 @@ public class Base {
         context = browser.newContext();
         page = context.newPage();
     }
-    
+
     @AfterMethod
     public void tearDown() {
         if (context != null) {

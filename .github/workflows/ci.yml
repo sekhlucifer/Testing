@@ -65,3 +65,41 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: target/*.jar
+
+  deploy-report:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Download Surefire reports
+        uses: actions/download-artifact@v4
+        with:
+          name: surefire-reports
+          path: target/surefire-reports
+
+      - name: Inject Feedback Script (Utterances) into HTML Reports
+        run: |
+          # Injecting the Utterances comments widget just before the closing </body> tag
+          SCRIPT='<script src="https://utteranc.es/client.js" repo="sekhlucifer/Testing" issue-term="pathname" theme="github-light" crossorigin="anonymous" async></script>'
+          
+          # Add to emailable-report.html
+          if [ -f "target/surefire-reports/emailable-report.html" ]; then
+            sed -i "s|</body>|$SCRIPT</body>|g" target/surefire-reports/emailable-report.html
+          fi
+          
+          # Add to index.html
+          if [ -f "target/surefire-reports/index.html" ]; then
+            sed -i "s|</body>|$SCRIPT</body>|g" target/surefire-reports/index.html
+          fi
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./target/surefire-reports
+          publish_branch: gh-pages
+          force_orphan: true
