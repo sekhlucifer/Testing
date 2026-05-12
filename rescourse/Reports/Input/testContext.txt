@@ -1,0 +1,147 @@
+You are a Playwright Test Generator Agent (Java).
+
+SCENARIO:
+End-to-End test for OrangeHRM application covering:
+- Login with valid and invalid credentials
+- Navigation to Admin module
+- Adding a new user
+- Verifying success notification
+- Logout functionality
+
+TECH STACK:
+- Playwright Java
+- Test framework: TestNG (preferred) or JUnit
+- Language: Java
+
+TEST STEPS:
+
+PART 1: INVALID LOGIN
+1. Navigate to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2. Enter invalid username and password
+3. Click on "Login"
+4. Verify error message is displayed (Invalid credentials)
+
+PART 2: VALID LOGIN
+5. Enter username as "Admin"
+6. Enter password as "admin123"
+7. Click on "Login"
+8. Verify that URL contains "dashboard"
+9. Verify "Dashboard" text is visible
+
+PART 3: NAVIGATE TO ADMIN MODULE
+10. Locate sidebar menu
+11. Click on "Admin" module
+12. Verify Admin page is loaded
+
+PART 4: ADD NEW USER
+13. Click on "Add" button
+14. Verify Add User form is visible
+
+15. Fill the form:
+   - User Role: Select "Admin" from dropdown
+   - Status: Select "Enabled" from dropdown
+   - Employee Name: Enter "John Doe"
+   - Username: Enter "Johner"
+   - Password: Enter a valid password
+   - Confirm Password: Re-enter the same password
+
+16. Click on "Save" button
+
+PART 5: VALIDATION
+17. Verify success notification popup is displayed (e.g., "Successfully Saved")
+18. Verify user is redirected back to user records list
+
+PART 6: LOGOUT
+19. Click on user profile dropdown (top right)
+20. Click on "Logout"
+21. Verify user is redirected to login page
+
+---
+
+INSTRUCTIONS:
+
+- DO NOT directly generate the final Playwright Java test.
+- You MUST execute step-by-step using MCP tools.
+
+PROCESS:
+
+1. SCENARIO ANALYSIS
+- Break scenario into logical modules:
+  - Login (invalid + valid)
+  - Navigation
+  - Form interaction
+  - Validation
+  - Logout
+
+2. MCP STEP EXECUTION
+For each step:
+- Use MCP to inspect DOM structure
+- Identify stable selectors:
+  - Prefer getByRole() equivalents in Playwright Java
+  - Use page.locator() with accessible attributes
+- Validate element visibility before interaction
+- Perform actions using:
+  - page.fill()
+  - page.click()
+  - page.locator()
+
+3. DROPDOWN HANDLING
+- Identify if dropdown is custom (div-based) or native (select)
+- Use:
+  - click + select option (for custom dropdown)
+  - selectOption() (for native dropdown)
+
+4. ASSERTIONS (JAVA)
+- Use Playwright assertions or TestNG/JUnit assertions:
+  - assertTrue()
+  - assertEquals()
+- Validate:
+  - URL contains "dashboard"
+  - Text "Dashboard" is visible
+  - Error message for invalid login
+  - Success toast message after saving user
+
+5. NOTIFICATION HANDLING
+- Detect toast/snackbar element
+- Wait for visibility using Playwright auto-wait
+- Validate success message text
+
+6. CONTEXT MANAGEMENT
+- Maintain browser session across steps
+- Ensure navigation completes before next step
+- Avoid Thread.sleep(), use Playwright waits
+
+7. FINAL TEST GENERATION
+After all steps are verified:
+- Generate Playwright Java test
+- Use:
+  - @Test annotation (TestNG/JUnit)
+  - Proper class structure
+  - Page Object Model (recommended)
+
+---
+
+OUTPUT REQUIREMENTS:
+
+- Clean and readable Java code
+- Use Page Object Model (POM)
+- Use robust locators (avoid XPath if possible)
+- Proper async handling (Playwright Java sync API)
+- No hard waits
+
+---
+
+FILE OUTPUT:
+
+Save files as:
+
+/tests/OrangeHRMTest.java  
+/pages/LoginPage.java  
+/pages/DashboardPage.java  
+/pages/AdminPage.java  
+
+---
+
+GOAL:
+
+Generate a stable, maintainable, and production-ready Playwright Java test using MCP-assisted exploration, ensuring full coverage of login, user creation, and logout workflows.

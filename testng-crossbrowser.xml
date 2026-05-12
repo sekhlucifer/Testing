@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Cross Browser Suite" parallel="methods" thread-count="1">
+    <!-- 
+    Note: thread-count="1" ensures tests run sequentially.
+    Each test method will run in a different browser based on the parameter.
+    After one test completes and closes its browser, the next test starts with a new browser.
+    -->
+    
+    <parameter name="browser" value="chromium"/>
+    
+    <test name="Chrome Tests">
+        <parameter name="browser" value="chromium"/>
+        <classes>
+            <class name="mcpdemo.tests.OrangehrmETE"/>
+        </classes>
+    </test>
+    
+    <test name="Firefox Tests">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="mcpdemo.tests.OrangehrmETE"/>
+        </classes>
+    </test>
+    
+    <test name="WebKit Tests">
+        <parameter name="browser" value="webkit"/>
+        <classes>
+            <class name="mcpdemo.tests.OrangehrmETE"/>
+        </classes>
+    </test>
+    
+</suite>
