@@ -28,7 +28,7 @@ jobs:
           sudo apt-get update || true
 
       - name: Install Playwright browsers and dependencies
-        run: mvn test-compile exec:java -e -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install --with-deps"
+        run: npx -y playwright@1.40.0 install --with-deps
 
       - name: Build and run tests
         run: mvn -B clean test
