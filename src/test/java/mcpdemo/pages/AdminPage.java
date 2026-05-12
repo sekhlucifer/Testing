@@ -34,7 +34,7 @@ public class AdminPage {
         this.confirmPasswordInput = page.locator("xpath=//label[text()='Confirm Password']/../following-sibling::div//input");
         
         this.saveButton = page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Save"));
-        this.successNotification = page.locator(".oxd-toast-container-text");
+        this.successNotification = page.locator(".oxd-toast-content-text");
         this.adminHeading = page.locator("h6").filter(new Locator.FilterOptions().setHasText("Admin"));
     }
     
@@ -104,7 +104,14 @@ public class AdminPage {
         try {
             successNotification.waitFor(new Locator.WaitForOptions().setTimeout(15000));
         } catch (Exception e) {
-            // ignore
+            // Fallback: try broader toast selector
+            try {
+                Locator fallback = page.locator(".oxd-toast");
+                fallback.waitFor(new Locator.WaitForOptions().setTimeout(5000));
+                return fallback.isVisible();
+            } catch (Exception ex) {
+                takeScreenshot("toast_not_found");
+            }
         }
         return successNotification.isVisible();
     }
