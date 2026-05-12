@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: mcr.microsoft.com/playwright/java:v1.40.0-jammy
+      options: --user 1001
 
     steps:
       - uses: actions/checkout@v4

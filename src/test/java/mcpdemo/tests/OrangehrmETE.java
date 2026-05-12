@@ -111,7 +111,6 @@ public class OrangehrmETE extends Base {
         // Add new user
         String uniqueUsername = username + System.currentTimeMillis();
         adminPage.addUser(employeeFullName, uniqueUsername, password);
-        adminPage.clickSave();
         // Verify success notification
         assertTrue(adminPage.isSuccessNotificationVisible(), "Success notification should be displayed");
         String notification = adminPage.getSuccessNotification();
