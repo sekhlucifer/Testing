@@ -7,6 +7,10 @@
     After one test completes and closes its browser, the next test starts with a new browser.
     -->
     
+    <listeners>
+        <listener class-name="mcpdemo.listeners.PremiumHtmlReporter"/>
+    </listeners>
+
     <parameter name="browser" value="chromium"/>
     
     <test name="Chrome Tests">
