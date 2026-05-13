@@ -77,17 +77,17 @@ public class PremiumHtmlReporter implements IReporter {
         template = template.replace("{{SUMMARY_ROWS}}", rowsHtml.toString());
         template = template.replace("{{DETAILED_ROWS}}", detailedRowsHtml.toString());
 
-        // Ensure output directory exists
-        File outDir = new File(outputDirectory);
+        // Ensure docs directory exists
+        File outDir = new File("docs");
         if (!outDir.exists()) {
             outDir.mkdirs();
         }
 
         try {
-            FileWriter writer = new FileWriter(new File(outDir, "Premium-Report.html"));
+            FileWriter writer = new FileWriter(new File(outDir, "index.html"));
             writer.write(template);
             writer.close();
-            System.out.println("Premium Report Generated: " + outDir.getAbsolutePath() + "/Premium-Report.html");
+            System.out.println("Premium Report Generated: " + new File(outDir, "index.html").getAbsolutePath());
         } catch (IOException e) {
             e.printStackTrace();
         }
