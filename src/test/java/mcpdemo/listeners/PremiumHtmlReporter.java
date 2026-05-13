@@ -15,10 +15,14 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-public class PremiumHtmlReporter implements IReporter {
+import org.testng.ISuiteListener;
+
+import org.testng.ITestListener;
+
+public class PremiumHtmlReporter implements ITestListener {
 
     @Override
-    public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
+    public void onFinish(ITestContext context) {
         int totalTests = 0;
         int passedTests = 0;
         int failedTests = 0;
@@ -29,41 +33,34 @@ public class PremiumHtmlReporter implements IReporter {
         
         int tcId = 1;
 
-        for (ISuite suite : suites) {
-            Map<String, ISuiteResult> results = suite.getResults();
-            for (ISuiteResult result : results.values()) {
-                ITestContext context = result.getTestContext();
-                
-                passedTests += context.getPassedTests().size();
-                failedTests += context.getFailedTests().size();
-                skippedTests += context.getSkippedTests().size();
-                totalTests = passedTests + failedTests + skippedTests;
+        passedTests += context.getPassedTests().size();
+        failedTests += context.getFailedTests().size();
+        skippedTests += context.getSkippedTests().size();
+        totalTests = passedTests + failedTests + skippedTests;
 
-                // Build Passed Tests
-                for (ITestResult passedTest : context.getPassedTests().getAllResults()) {
-                    long duration = (passedTest.getEndMillis() - passedTest.getStartMillis());
-                    String name = passedTest.getName() + " (" + passedTest.getTestContext().getName() + ")";
-                    rowsHtml.append(buildRow(name, "Passed", duration / 1000.0));
-                    detailedRowsHtml.append(buildDetailedRow("TC_" + String.format("%02d", tcId++), name, "Test executed successfully", "Pass", "-"));
-                }
+        // Build Passed Tests
+        for (ITestResult passedTest : context.getPassedTests().getAllResults()) {
+            long duration = (passedTest.getEndMillis() - passedTest.getStartMillis());
+            String name = passedTest.getName();
+            rowsHtml.append(buildRow(name, "Passed", duration / 1000.0));
+            detailedRowsHtml.append(buildDetailedRow("TC_" + String.format("%02d", tcId++), name, "Test executed successfully", "Pass", "-"));
+        }
 
-                // Build Failed Tests
-                for (ITestResult failedTest : context.getFailedTests().getAllResults()) {
-                    long duration = (failedTest.getEndMillis() - failedTest.getStartMillis());
-                    String name = failedTest.getName() + " (" + failedTest.getTestContext().getName() + ")";
-                    rowsHtml.append(buildRow(name, "Failed", duration / 1000.0));
-                    String error = failedTest.getThrowable() != null ? failedTest.getThrowable().getClass().getSimpleName() : "Unknown Error";
-                    detailedRowsHtml.append(buildDetailedRow("TC_" + String.format("%02d", tcId++), name, "Test failed during execution", "Fail", error));
-                }
+        // Build Failed Tests
+        for (ITestResult failedTest : context.getFailedTests().getAllResults()) {
+            long duration = (failedTest.getEndMillis() - failedTest.getStartMillis());
+            String name = failedTest.getName();
+            rowsHtml.append(buildRow(name, "Failed", duration / 1000.0));
+            String error = failedTest.getThrowable() != null ? failedTest.getThrowable().getClass().getSimpleName() : "Unknown Error";
+            detailedRowsHtml.append(buildDetailedRow("TC_" + String.format("%02d", tcId++), name, "Test failed during execution", "Fail", error));
+        }
 
-                // Build Skipped Tests
-                for (ITestResult skippedTest : context.getSkippedTests().getAllResults()) {
-                    long duration = (skippedTest.getEndMillis() - skippedTest.getStartMillis());
-                    String name = skippedTest.getName() + " (" + skippedTest.getTestContext().getName() + ")";
-                    rowsHtml.append(buildRow(name, "Skipped", duration / 1000.0));
-                    detailedRowsHtml.append(buildDetailedRow("TC_" + String.format("%02d", tcId++), name, "Test was skipped", "Skip", "-"));
-                }
-            }
+        // Build Skipped Tests
+        for (ITestResult skippedTest : context.getSkippedTests().getAllResults()) {
+            long duration = (skippedTest.getEndMillis() - skippedTest.getStartMillis());
+            String name = skippedTest.getName();
+            rowsHtml.append(buildRow(name, "Skipped", duration / 1000.0));
+            detailedRowsHtml.append(buildDetailedRow("TC_" + String.format("%02d", tcId++), name, "Test was skipped", "Skip", "-"));
         }
 
         String dateStr = new SimpleDateFormat("dd MMM yyyy HH:mm:ss").format(new Date());
@@ -87,7 +84,10 @@ public class PremiumHtmlReporter implements IReporter {
             FileWriter writer = new FileWriter(new File(outDir, "index.html"));
             writer.write(template);
             writer.close();
-            System.out.println("Premium Report Generated: " + new File(outDir, "index.html").getAbsolutePath());
+            System.out.println("\n========================================================");
+            System.out.println("✅ PREMIUM REPORT SUCCESSFULLY GENERATED!");
+            System.out.println("📍 Location: " + new File(outDir, "index.html").getAbsolutePath());
+            System.out.println("========================================================\n");
         } catch (IOException e) {
             e.printStackTrace();
         }
