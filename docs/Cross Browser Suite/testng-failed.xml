@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="methods" name="Failed suite [Cross Browser Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="browser" value="chromium"/>
+  <test thread-count="1" parallel="methods" name="Chrome Tests(failed)" verbose="0">
+    <parameter name="browser" value="chromium"/>
+    <classes>
+      <class name="mcpdemo.tests.OrangehrmETE">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="testAddNewUser"/>
+        </methods>
+      </class> <!-- mcpdemo.tests.OrangehrmETE -->
+    </classes>
+  </test> <!-- Chrome Tests(failed) -->
+  <test thread-count="1" parallel="methods" name="Firefox Tests(failed)" verbose="0">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="mcpdemo.tests.OrangehrmETE">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="testAddNewUser"/>
+        </methods>
+      </class> <!-- mcpdemo.tests.OrangehrmETE -->
+    </classes>
+  </test> <!-- Firefox Tests(failed) -->
+  <test thread-count="1" parallel="methods" name="WebKit Tests(failed)" verbose="0">
+    <parameter name="browser" value="webkit"/>
+    <classes>
+      <class name="mcpdemo.tests.OrangehrmETE">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testLogout"/>
+          <include name="setup"/>
+          <include name="testAddNewUser"/>
+        </methods>
+      </class> <!-- mcpdemo.tests.OrangehrmETE -->
+    </classes>
+  </test> <!-- WebKit Tests(failed) -->
+</suite> <!-- Failed suite [Cross Browser Suite] -->

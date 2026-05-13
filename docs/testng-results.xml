@@ -1,0 +1,1289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="15" passed="11" failed="4" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Starting test: Invalid Login]]>
+    </line>
+    <line>
+      <![CDATA[Navigating to OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
+    </line>
+    <line>
+      <![CDATA[Entering invalid credentials]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithInvalidCredentials_1778590265389.png' height='400' width='400'></img></br>]]>
+    </line>
+    <line>
+      <![CDATA[Verifying error message is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Invalid login test passed successfully.]]>
+    </line>
+    <line>
+      <![CDATA[Starting test: Valid Login]]>
+    </line>
+    <line>
+      <![CDATA[Navigating to OrangeHRM login page]]>
+    </line>
+    <line>
+      <![CDATA[Entering valid credentials]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590282163.png' height='400' width='400'></img></br>]]>
+    </line>
+    <line>
+      <![CDATA[Verifying redirection to dashboard]]>
+    </line>
+    <line>
+      <![CDATA[Verifying Dashboard heading is visible]]>
+    </line>
+    <line>
+      <![CDATA[Valid login test passed successfully.]]>
+    </line>
+    <line>
+      <![CDATA[Starting test: Navigate to Admin]]>
+    </line>
+    <line>
+      <![CDATA[Logging in as Admin]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590296356.png' height='400' width='400'></img></br>]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on Admin module from sidebar]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/navigateToAdmin_1778590298139.png' height='400' width='400'></img></br>]]>
+    </line>
+    <line>
+      <![CDATA[Verifying Admin page is fully loaded]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to Admin test passed successfully.]]>
+    </line>
+    <line>
+      <![CDATA[Starting test: Add New User]]>
+    </line>
+    <line>
+      <![CDATA[Logging in as Admin]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590313108.png' height='400' width='400'></img></br>]]>
+    </line>
+    <line>
+      <![CDATA[Navigating to Admin module]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/navigateToAdmin_1778590316782.png' height='400' width='400'></img></br>]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Add button]]>
+    </line>
+    <line>
+      <![CDATA[Adding a new user with generated unique username: Johner1778590322586]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'Successfully Saved' toast notification]]>
+    </line>
+    <line>
+      <![CDATA[Starting test: Logout]]>
+    </line>
+    <line>
+      <![CDATA[Logging in as Admin]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590344541.png' height='400' width='400'></img></br>]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on logout button]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/logout_1778590346468.png' height='400' width='400'></img></br>]]>
+    </line>
+    <line>
+      <![CDATA[Verifying redirection back to login page]]>
+    </line>
+    <line>
+      <![CDATA[Logout test passed successfully.]]>
+    </line>
+    <line>
+      <![CDATA[Starting test: Invalid Login]]>
+    </line>
+    <line>
+      <![CDATA[Navigating to OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
+    </line>
+    <line>
+      <![CDATA[Entering invalid credentials]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithInvalidCredentials_1778590363506.png' height='400' width='400'></img></br>]]>
+    </line>
+    <line>
+      <![CDATA[Verifying error message is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Invalid login test passed successfully.]]>
+    </line>
+    <line>
+      <![CDATA[Starting test: Valid Login]]>
+    </line>
+    <line>
+      <![CDATA[Navigating to OrangeHRM login page]]>
+    </line>
+    <line>
+      <![CDATA[Entering valid credentials]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590382149.png' height='400' width='400'></img></br>]]>
+    </line>
+    <line>
+      <![CDATA[Verifying redirection to dashboard]]>
+    </line>
+    <line>
+      <![CDATA[Verifying Dashboard heading is visible]]>
+    </line>
+    <line>
+      <![CDATA[Valid login test passed successfully.]]>
+    </line>
+    <line>
+      <![CDATA[Starting test: Navigate to Admin]]>
+    </line>
+    <line>
+      <![CDATA[Logging in as Admin]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590399789.png' height='400' width='400'></img></br>]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on Admin module from sidebar]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/navigateToAdmin_1778590401936.png' height='400' width='400'></img></br>]]>
+    </line>
+    <line>
+      <![CDATA[Verifying Admin page is fully loaded]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to Admin test passed successfully.]]>
+    </line>
+    <line>
+      <![CDATA[Starting test: Add New User]]>
+    </line>
+    <line>
+      <![CDATA[Logging in as Admin]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590420771.png' height='400' width='400'></img></br>]]>
+    </line>
+    <line>
+      <![CDATA[Navigating to Admin module]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/navigateToAdmin_1778590423277.png' height='400' width='400'></img></br>]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Add button]]>
+    </line>
+    <line>
+      <![CDATA[Adding a new user with generated unique username: Johner1778590428378]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'Successfully Saved' toast notification]]>
+    </line>
+    <line>
+      <![CDATA[Starting test: Logout]]>
+    </line>
+    <line>
+      <![CDATA[Logging in as Admin]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590458686.png' height='400' width='400'></img></br>]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on logout button]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/logout_1778590463265.png' height='400' width='400'></img></br>]]>
+    </line>
+    <line>
+      <![CDATA[Verifying redirection back to login page]]>
+    </line>
+    <line>
+      <![CDATA[Logout test passed successfully.]]>
+    </line>
+    <line>
+      <![CDATA[Starting test: Invalid Login]]>
+    </line>
+    <line>
+      <![CDATA[Navigating to OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
+    </line>
+    <line>
+      <![CDATA[Entering invalid credentials]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithInvalidCredentials_1778590483021.png' height='400' width='400'></img></br>]]>
+    </line>
+    <line>
+      <![CDATA[Verifying error message is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Invalid login test passed successfully.]]>
+    </line>
+    <line>
+      <![CDATA[Starting test: Valid Login]]>
+    </line>
+    <line>
+      <![CDATA[Navigating to OrangeHRM login page]]>
+    </line>
+    <line>
+      <![CDATA[Entering valid credentials]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590502296.png' height='400' width='400'></img></br>]]>
+    </line>
+    <line>
+      <![CDATA[Verifying redirection to dashboard]]>
+    </line>
+    <line>
+      <![CDATA[Verifying Dashboard heading is visible]]>
+    </line>
+    <line>
+      <![CDATA[Valid login test passed successfully.]]>
+    </line>
+    <line>
+      <![CDATA[Starting test: Navigate to Admin]]>
+    </line>
+    <line>
+      <![CDATA[Logging in as Admin]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590520371.png' height='400' width='400'></img></br>]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on Admin module from sidebar]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/navigateToAdmin_1778590532070.png' height='400' width='400'></img></br>]]>
+    </line>
+    <line>
+      <![CDATA[Verifying Admin page is fully loaded]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to Admin test passed successfully.]]>
+    </line>
+    <line>
+      <![CDATA[Starting test: Add New User]]>
+    </line>
+    <line>
+      <![CDATA[Logging in as Admin]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590558510.png' height='400' width='400'></img></br>]]>
+    </line>
+    <line>
+      <![CDATA[Navigating to Admin module]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/navigateToAdmin_1778590564429.png' height='400' width='400'></img></br>]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Add button]]>
+    </line>
+    <line>
+      <![CDATA[Adding a new user with generated unique username: Johner1778590571210]]>
+    </line>
+    <line>
+      <![CDATA[Verifying 'Successfully Saved' toast notification]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/toast_not_found_1778590601490.png' height='400' width='400'></img></br>]]>
+    </line>
+    <line>
+      <![CDATA[Starting test: Logout]]>
+    </line>
+    <line>
+      <![CDATA[Logging in as Admin]]>
+    </line>
+    <line>
+      <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590646382.png' height='400' width='400'></img></br>]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on logout button]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-05-12T18:20:41 IST" name="Cross Browser Suite" finished-at="2026-05-12T18:28:04 IST" duration-ms="442845">
+    <groups>
+    </groups>
+    <test started-at="2026-05-12T18:20:41 IST" name="Chrome Tests" finished-at="2026-05-12T18:22:26 IST" duration-ms="105442">
+      <class name="mcpdemo.tests.OrangehrmETE">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:mcpdemo.tests.OrangehrmETE@5d740a0f]" started-at="2026-05-12T18:20:41 IST" name="setup" finished-at="2026-05-12T18:20:50 IST" duration-ms="8680" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chromium]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testInvalidLogin()[pri:1, instance:mcpdemo.tests.OrangehrmETE@5d740a0f]" started-at="2026-05-12T18:20:50 IST" name="testInvalidLogin" description="Test invalid login scenario" finished-at="2026-05-12T18:21:06 IST" duration-ms="15875" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Starting test: Invalid Login]]>
+            </line>
+            <line>
+              <![CDATA[Navigating to OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
+            </line>
+            <line>
+              <![CDATA[Entering invalid credentials]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithInvalidCredentials_1778590265389.png' height='400' width='400'></img></br>]]>
+            </line>
+            <line>
+              <![CDATA[Verifying error message is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Invalid login test passed successfully.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mcpdemo.tests.OrangehrmETE@5d740a0f]" started-at="2026-05-12T18:21:06 IST" name="tearDown" finished-at="2026-05-12T18:21:06 IST" duration-ms="267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:mcpdemo.tests.OrangehrmETE@5d740a0f]" started-at="2026-05-12T18:21:06 IST" name="setup" finished-at="2026-05-12T18:21:09 IST" duration-ms="3367" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chromium]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testValidLogin()[pri:2, instance:mcpdemo.tests.OrangehrmETE@5d740a0f]" started-at="2026-05-12T18:21:09 IST" name="testValidLogin" description="Test valid login and dashboard verification" finished-at="2026-05-12T18:21:23 IST" duration-ms="13548" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Starting test: Valid Login]]>
+            </line>
+            <line>
+              <![CDATA[Navigating to OrangeHRM login page]]>
+            </line>
+            <line>
+              <![CDATA[Entering valid credentials]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590282163.png' height='400' width='400'></img></br>]]>
+            </line>
+            <line>
+              <![CDATA[Verifying redirection to dashboard]]>
+            </line>
+            <line>
+              <![CDATA[Verifying Dashboard heading is visible]]>
+            </line>
+            <line>
+              <![CDATA[Valid login test passed successfully.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mcpdemo.tests.OrangehrmETE@5d740a0f]" started-at="2026-05-12T18:21:23 IST" name="tearDown" finished-at="2026-05-12T18:21:23 IST" duration-ms="114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:mcpdemo.tests.OrangehrmETE@5d740a0f]" started-at="2026-05-12T18:21:23 IST" name="setup" finished-at="2026-05-12T18:21:26 IST" duration-ms="2855" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chromium]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testNavigateToAdmin()[pri:3, instance:mcpdemo.tests.OrangehrmETE@5d740a0f]" started-at="2026-05-12T18:21:26 IST" name="testNavigateToAdmin" description="Test navigation to Admin module" finished-at="2026-05-12T18:21:38 IST" duration-ms="12451" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Starting test: Navigate to Admin]]>
+            </line>
+            <line>
+              <![CDATA[Logging in as Admin]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590296356.png' height='400' width='400'></img></br>]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on Admin module from sidebar]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/navigateToAdmin_1778590298139.png' height='400' width='400'></img></br>]]>
+            </line>
+            <line>
+              <![CDATA[Verifying Admin page is fully loaded]]>
+            </line>
+            <line>
+              <![CDATA[Navigate to Admin test passed successfully.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testNavigateToAdmin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mcpdemo.tests.OrangehrmETE@5d740a0f]" started-at="2026-05-12T18:21:38 IST" name="tearDown" finished-at="2026-05-12T18:21:38 IST" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:mcpdemo.tests.OrangehrmETE@5d740a0f]" started-at="2026-05-12T18:21:38 IST" name="setup" finished-at="2026-05-12T18:21:41 IST" duration-ms="2425" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chromium]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAddNewUser()[pri:4, instance:mcpdemo.tests.OrangehrmETE@5d740a0f]" started-at="2026-05-12T18:21:41 IST" name="testAddNewUser" description="Test adding a new user" finished-at="2026-05-12T18:22:10 IST" duration-ms="29317" status="FAIL">
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Error {
+  message='Error: strict mode violation: locator(".oxd-toast-content-text") resolved to 2 elements:
+    1) <p data-v-7b563373="" data-v-35c8fe09="" class="oxd…>Success</p> aka getByText("Success", new Page.GetByTextOptions().setExact(true))
+    2) <p data-v-7b563373="" data-v-35c8fe09="" class="oxd…>Successfully Saved</p> aka getByText("Successfully Saved")
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator(".oxd-toast-content-text") resolved to 2 elements:
+    1) <p data-v-7b563373="" data-v-35c8fe09="" class="oxd…>Success</p> aka getByText("Success", new Page.GetByTextOptions().setExact(true))
+    2) <p data-v-7b563373="" data-v-35c8fe09="" class="oxd…>Successfully Saved</p> aka getByText("Successfully Saved")
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at async LongStandingScope._race (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\utils\manualPromise.js:96:14)
+    at async evaluateExpression (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\javascript.js:241:12)
+    at async C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\frames.js:1409:13
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\frames.js:912:24)
+    at async ProgressController.run (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\progress.js:91:22)
+    at async FrameDispatcher.textContent (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\frameDispatcher.js:173:19)
+    at async LongStandingScope._race (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:86:14)
+    at async DispatcherConnection.dispatch (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:351:22)
+}
+Call log:
+- waiting for locator(".oxd-toast-content-text")
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Error {
+  message='Error: strict mode violation: locator(".oxd-toast-content-text") resolved to 2 elements:
+    1) <p data-v-7b563373="" data-v-35c8fe09="" class="oxd…>Success</p> aka getByText("Success", new Page.GetByTextOptions().setExact(true))
+    2) <p data-v-7b563373="" data-v-35c8fe09="" class="oxd…>Successfully Saved</p> aka getByText("Successfully Saved")
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator(".oxd-toast-content-text") resolved to 2 elements:
+    1) <p data-v-7b563373="" data-v-35c8fe09="" class="oxd…>Success</p> aka getByText("Success", new Page.GetByTextOptions().setExact(true))
+    2) <p data-v-7b563373="" data-v-35c8fe09="" class="oxd…>Successfully Saved</p> aka getByText("Successfully Saved")
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at async LongStandingScope._race (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\utils\manualPromise.js:96:14)
+    at async evaluateExpression (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\javascript.js:241:12)
+    at async C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\frames.js:1409:13
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\frames.js:912:24)
+    at async ProgressController.run (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\progress.js:91:22)
+    at async FrameDispatcher.textContent (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\frameDispatcher.js:173:19)
+    at async LongStandingScope._race (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:86:14)
+    at async DispatcherConnection.dispatch (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:351:22)
+}
+Call log:
+- waiting for locator(".oxd-toast-content-text")
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:566)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5051)
+at mcpdemo.pages.AdminPage.getSuccessNotification(AdminPage.java:100)
+at mcpdemo.tests.OrangehrmETE.testAddNewUser(OrangehrmETE.java:133)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='Error: strict mode violation: locator(".oxd-toast-content-text") resolved to 2 elements:
+    1) <p data-v-7b563373="" data-v-35c8fe09="" class="oxd…>Success</p> aka getByText("Success", new Page.GetByTextOptions().setExact(true))
+    2) <p data-v-7b563373="" data-v-35c8fe09="" class="oxd…>Successfully Saved</p> aka getByText("Successfully Saved")
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator(".oxd-toast-content-text") resolved to 2 elements:
+    1) <p data-v-7b563373="" data-v-35c8fe09="" class="oxd…>Success</p> aka getByText("Success", new Page.GetByTextOptions().setExact(true))
+    2) <p data-v-7b563373="" data-v-35c8fe09="" class="oxd…>Successfully Saved</p> aka getByText("Successfully Saved")
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at async LongStandingScope._race (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\utils\manualPromise.js:96:14)
+    at async evaluateExpression (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\javascript.js:241:12)
+    at async C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\frames.js:1409:13
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\frames.js:912:24)
+    at async ProgressController.run (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\progress.js:91:22)
+    at async FrameDispatcher.textContent (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\frameDispatcher.js:173:19)
+    at async LongStandingScope._race (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:86:14)
+    at async DispatcherConnection.dispatch (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:351:22)
+}
+Call log:
+- waiting for locator(".oxd-toast-content-text")
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Starting test: Add New User]]>
+            </line>
+            <line>
+              <![CDATA[Logging in as Admin]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590313108.png' height='400' width='400'></img></br>]]>
+            </line>
+            <line>
+              <![CDATA[Navigating to Admin module]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/navigateToAdmin_1778590316782.png' height='400' width='400'></img></br>]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Add button]]>
+            </line>
+            <line>
+              <![CDATA[Adding a new user with generated unique username: Johner1778590322586]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'Successfully Saved' toast notification]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testAddNewUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mcpdemo.tests.OrangehrmETE@5d740a0f]" started-at="2026-05-12T18:22:10 IST" name="tearDown" finished-at="2026-05-12T18:22:10 IST" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:mcpdemo.tests.OrangehrmETE@5d740a0f]" started-at="2026-05-12T18:22:10 IST" name="setup" finished-at="2026-05-12T18:22:12 IST" duration-ms="2169" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chromium]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLogout()[pri:5, instance:mcpdemo.tests.OrangehrmETE@5d740a0f]" started-at="2026-05-12T18:22:12 IST" name="testLogout" description="Test logout functionality" finished-at="2026-05-12T18:22:26 IST" duration-ms="13819" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Starting test: Logout]]>
+            </line>
+            <line>
+              <![CDATA[Logging in as Admin]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590344541.png' height='400' width='400'></img></br>]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on logout button]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/logout_1778590346468.png' height='400' width='400'></img></br>]]>
+            </line>
+            <line>
+              <![CDATA[Verifying redirection back to login page]]>
+            </line>
+            <line>
+              <![CDATA[Logout test passed successfully.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testLogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mcpdemo.tests.OrangehrmETE@5d740a0f]" started-at="2026-05-12T18:22:26 IST" name="tearDown" finished-at="2026-05-12T18:22:26 IST" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- mcpdemo.tests.OrangehrmETE -->
+    </test> <!-- Chrome Tests -->
+    <test started-at="2026-05-12T18:22:26 IST" name="Firefox Tests" finished-at="2026-05-12T18:24:25 IST" duration-ms="118756">
+      <class name="mcpdemo.tests.OrangehrmETE">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:mcpdemo.tests.OrangehrmETE@197d671]" started-at="2026-05-12T18:22:26 IST" name="setup" finished-at="2026-05-12T18:22:30 IST" duration-ms="4017" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testInvalidLogin()[pri:1, instance:mcpdemo.tests.OrangehrmETE@197d671]" started-at="2026-05-12T18:22:30 IST" name="testInvalidLogin" description="Test invalid login scenario" finished-at="2026-05-12T18:22:44 IST" duration-ms="13694" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Starting test: Invalid Login]]>
+            </line>
+            <line>
+              <![CDATA[Navigating to OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
+            </line>
+            <line>
+              <![CDATA[Entering invalid credentials]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithInvalidCredentials_1778590363506.png' height='400' width='400'></img></br>]]>
+            </line>
+            <line>
+              <![CDATA[Verifying error message is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Invalid login test passed successfully.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mcpdemo.tests.OrangehrmETE@197d671]" started-at="2026-05-12T18:22:44 IST" name="tearDown" finished-at="2026-05-12T18:22:45 IST" duration-ms="954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:mcpdemo.tests.OrangehrmETE@197d671]" started-at="2026-05-12T18:22:45 IST" name="setup" finished-at="2026-05-12T18:22:49 IST" duration-ms="4076" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testValidLogin()[pri:2, instance:mcpdemo.tests.OrangehrmETE@197d671]" started-at="2026-05-12T18:22:49 IST" name="testValidLogin" description="Test valid login and dashboard verification" finished-at="2026-05-12T18:23:03 IST" duration-ms="13559" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Starting test: Valid Login]]>
+            </line>
+            <line>
+              <![CDATA[Navigating to OrangeHRM login page]]>
+            </line>
+            <line>
+              <![CDATA[Entering valid credentials]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590382149.png' height='400' width='400'></img></br>]]>
+            </line>
+            <line>
+              <![CDATA[Verifying redirection to dashboard]]>
+            </line>
+            <line>
+              <![CDATA[Verifying Dashboard heading is visible]]>
+            </line>
+            <line>
+              <![CDATA[Valid login test passed successfully.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mcpdemo.tests.OrangehrmETE@197d671]" started-at="2026-05-12T18:23:03 IST" name="tearDown" finished-at="2026-05-12T18:23:04 IST" duration-ms="882" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:mcpdemo.tests.OrangehrmETE@197d671]" started-at="2026-05-12T18:23:04 IST" name="setup" finished-at="2026-05-12T18:23:08 IST" duration-ms="4181" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testNavigateToAdmin()[pri:3, instance:mcpdemo.tests.OrangehrmETE@197d671]" started-at="2026-05-12T18:23:08 IST" name="testNavigateToAdmin" description="Test navigation to Admin module" finished-at="2026-05-12T18:23:23 IST" duration-ms="14747" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Starting test: Navigate to Admin]]>
+            </line>
+            <line>
+              <![CDATA[Logging in as Admin]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590399789.png' height='400' width='400'></img></br>]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on Admin module from sidebar]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/navigateToAdmin_1778590401936.png' height='400' width='400'></img></br>]]>
+            </line>
+            <line>
+              <![CDATA[Verifying Admin page is fully loaded]]>
+            </line>
+            <line>
+              <![CDATA[Navigate to Admin test passed successfully.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testNavigateToAdmin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mcpdemo.tests.OrangehrmETE@197d671]" started-at="2026-05-12T18:23:23 IST" name="tearDown" finished-at="2026-05-12T18:23:23 IST" duration-ms="891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:mcpdemo.tests.OrangehrmETE@197d671]" started-at="2026-05-12T18:23:23 IST" name="setup" finished-at="2026-05-12T18:23:28 IST" duration-ms="4566" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAddNewUser()[pri:4, instance:mcpdemo.tests.OrangehrmETE@197d671]" started-at="2026-05-12T18:23:28 IST" name="testAddNewUser" description="Test adding a new user" finished-at="2026-05-12T18:23:59 IST" duration-ms="31273" status="FAIL">
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Error {
+  message='Error: strict mode violation: locator(".oxd-toast-content-text") resolved to 2 elements:
+    1) <p data-v-7b563373="" data-v-35c8fe09="" class="oxd…>Success</p> aka getByText("Success", new Page.GetByTextOptions().setExact(true))
+    2) <p data-v-7b563373="" data-v-35c8fe09="" class="oxd…>Successfully Saved</p> aka getByText("Successfully Saved")
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator(".oxd-toast-content-text") resolved to 2 elements:
+    1) <p data-v-7b563373="" data-v-35c8fe09="" class="oxd…>Success</p> aka getByText("Success", new Page.GetByTextOptions().setExact(true))
+    2) <p data-v-7b563373="" data-v-35c8fe09="" class="oxd…>Successfully Saved</p> aka getByText("Successfully Saved")
+
+    at checkException (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\firefox\ffExecutionContext.js:111:121)
+    at FFExecutionContext.evaluateWithArguments (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\firefox\ffExecutionContext.js:82:5)
+    at async LongStandingScope._race (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\utils\manualPromise.js:96:14)
+    at async evaluateExpression (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\javascript.js:241:12)
+    at async C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\frames.js:1409:13
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\frames.js:912:24)
+    at async ProgressController.run (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\progress.js:91:22)
+    at async FrameDispatcher.textContent (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\frameDispatcher.js:173:19)
+    at async LongStandingScope._race (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:86:14)
+}
+Call log:
+- waiting for locator(".oxd-toast-content-text")
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Error {
+  message='Error: strict mode violation: locator(".oxd-toast-content-text") resolved to 2 elements:
+    1) <p data-v-7b563373="" data-v-35c8fe09="" class="oxd…>Success</p> aka getByText("Success", new Page.GetByTextOptions().setExact(true))
+    2) <p data-v-7b563373="" data-v-35c8fe09="" class="oxd…>Successfully Saved</p> aka getByText("Successfully Saved")
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator(".oxd-toast-content-text") resolved to 2 elements:
+    1) <p data-v-7b563373="" data-v-35c8fe09="" class="oxd…>Success</p> aka getByText("Success", new Page.GetByTextOptions().setExact(true))
+    2) <p data-v-7b563373="" data-v-35c8fe09="" class="oxd…>Successfully Saved</p> aka getByText("Successfully Saved")
+
+    at checkException (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\firefox\ffExecutionContext.js:111:121)
+    at FFExecutionContext.evaluateWithArguments (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\firefox\ffExecutionContext.js:82:5)
+    at async LongStandingScope._race (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\utils\manualPromise.js:96:14)
+    at async evaluateExpression (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\javascript.js:241:12)
+    at async C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\frames.js:1409:13
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\frames.js:912:24)
+    at async ProgressController.run (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\progress.js:91:22)
+    at async FrameDispatcher.textContent (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\frameDispatcher.js:173:19)
+    at async LongStandingScope._race (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:86:14)
+}
+Call log:
+- waiting for locator(".oxd-toast-content-text")
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:566)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5051)
+at mcpdemo.pages.AdminPage.getSuccessNotification(AdminPage.java:100)
+at mcpdemo.tests.OrangehrmETE.testAddNewUser(OrangehrmETE.java:133)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='Error: strict mode violation: locator(".oxd-toast-content-text") resolved to 2 elements:
+    1) <p data-v-7b563373="" data-v-35c8fe09="" class="oxd…>Success</p> aka getByText("Success", new Page.GetByTextOptions().setExact(true))
+    2) <p data-v-7b563373="" data-v-35c8fe09="" class="oxd…>Successfully Saved</p> aka getByText("Successfully Saved")
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator(".oxd-toast-content-text") resolved to 2 elements:
+    1) <p data-v-7b563373="" data-v-35c8fe09="" class="oxd…>Success</p> aka getByText("Success", new Page.GetByTextOptions().setExact(true))
+    2) <p data-v-7b563373="" data-v-35c8fe09="" class="oxd…>Successfully Saved</p> aka getByText("Successfully Saved")
+
+    at checkException (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\firefox\ffExecutionContext.js:111:121)
+    at FFExecutionContext.evaluateWithArguments (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\firefox\ffExecutionContext.js:82:5)
+    at async LongStandingScope._race (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\utils\manualPromise.js:96:14)
+    at async evaluateExpression (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\javascript.js:241:12)
+    at async C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\frames.js:1409:13
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\frames.js:912:24)
+    at async ProgressController.run (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\progress.js:91:22)
+    at async FrameDispatcher.textContent (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\frameDispatcher.js:173:19)
+    at async LongStandingScope._race (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:86:14)
+}
+Call log:
+- waiting for locator(".oxd-toast-content-text")
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+... 27 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Starting test: Add New User]]>
+            </line>
+            <line>
+              <![CDATA[Logging in as Admin]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590420771.png' height='400' width='400'></img></br>]]>
+            </line>
+            <line>
+              <![CDATA[Navigating to Admin module]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/navigateToAdmin_1778590423277.png' height='400' width='400'></img></br>]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Add button]]>
+            </line>
+            <line>
+              <![CDATA[Adding a new user with generated unique username: Johner1778590428378]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'Successfully Saved' toast notification]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testAddNewUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mcpdemo.tests.OrangehrmETE@197d671]" started-at="2026-05-12T18:23:59 IST" name="tearDown" finished-at="2026-05-12T18:24:00 IST" duration-ms="877" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:mcpdemo.tests.OrangehrmETE@197d671]" started-at="2026-05-12T18:24:00 IST" name="setup" finished-at="2026-05-12T18:24:05 IST" duration-ms="4991" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLogout()[pri:5, instance:mcpdemo.tests.OrangehrmETE@197d671]" started-at="2026-05-12T18:24:05 IST" name="testLogout" description="Test logout functionality" finished-at="2026-05-12T18:24:23 IST" duration-ms="17832" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Starting test: Logout]]>
+            </line>
+            <line>
+              <![CDATA[Logging in as Admin]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590458686.png' height='400' width='400'></img></br>]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on logout button]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/logout_1778590463265.png' height='400' width='400'></img></br>]]>
+            </line>
+            <line>
+              <![CDATA[Verifying redirection back to login page]]>
+            </line>
+            <line>
+              <![CDATA[Logout test passed successfully.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testLogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mcpdemo.tests.OrangehrmETE@197d671]" started-at="2026-05-12T18:24:23 IST" name="tearDown" finished-at="2026-05-12T18:24:25 IST" duration-ms="2186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- mcpdemo.tests.OrangehrmETE -->
+    </test> <!-- Firefox Tests -->
+    <test started-at="2026-05-12T18:24:25 IST" name="WebKit Tests" finished-at="2026-05-12T18:28:04 IST" duration-ms="218505">
+      <class name="mcpdemo.tests.OrangehrmETE">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:mcpdemo.tests.OrangehrmETE@79ad8b2f]" started-at="2026-05-12T18:24:25 IST" name="setup" finished-at="2026-05-12T18:24:29 IST" duration-ms="3662" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webkit]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testInvalidLogin()[pri:1, instance:mcpdemo.tests.OrangehrmETE@79ad8b2f]" started-at="2026-05-12T18:24:29 IST" name="testInvalidLogin" description="Test invalid login scenario" finished-at="2026-05-12T18:24:43 IST" duration-ms="14402" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Starting test: Invalid Login]]>
+            </line>
+            <line>
+              <![CDATA[Navigating to OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
+            </line>
+            <line>
+              <![CDATA[Entering invalid credentials]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithInvalidCredentials_1778590483021.png' height='400' width='400'></img></br>]]>
+            </line>
+            <line>
+              <![CDATA[Verifying error message is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Invalid login test passed successfully.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mcpdemo.tests.OrangehrmETE@79ad8b2f]" started-at="2026-05-12T18:24:43 IST" name="tearDown" finished-at="2026-05-12T18:24:43 IST" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:mcpdemo.tests.OrangehrmETE@79ad8b2f]" started-at="2026-05-12T18:24:43 IST" name="setup" finished-at="2026-05-12T18:24:47 IST" duration-ms="3487" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webkit]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testValidLogin()[pri:2, instance:mcpdemo.tests.OrangehrmETE@79ad8b2f]" started-at="2026-05-12T18:24:47 IST" name="testValidLogin" description="Test valid login and dashboard verification" finished-at="2026-05-12T18:25:03 IST" duration-ms="16344" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Starting test: Valid Login]]>
+            </line>
+            <line>
+              <![CDATA[Navigating to OrangeHRM login page]]>
+            </line>
+            <line>
+              <![CDATA[Entering valid credentials]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590502296.png' height='400' width='400'></img></br>]]>
+            </line>
+            <line>
+              <![CDATA[Verifying redirection to dashboard]]>
+            </line>
+            <line>
+              <![CDATA[Verifying Dashboard heading is visible]]>
+            </line>
+            <line>
+              <![CDATA[Valid login test passed successfully.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mcpdemo.tests.OrangehrmETE@79ad8b2f]" started-at="2026-05-12T18:25:03 IST" name="tearDown" finished-at="2026-05-12T18:25:03 IST" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:mcpdemo.tests.OrangehrmETE@79ad8b2f]" started-at="2026-05-12T18:25:03 IST" name="setup" finished-at="2026-05-12T18:25:07 IST" duration-ms="3255" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webkit]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testNavigateToAdmin()[pri:3, instance:mcpdemo.tests.OrangehrmETE@79ad8b2f]" started-at="2026-05-12T18:25:07 IST" name="testNavigateToAdmin" description="Test navigation to Admin module" finished-at="2026-05-12T18:25:33 IST" duration-ms="26495" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Starting test: Navigate to Admin]]>
+            </line>
+            <line>
+              <![CDATA[Logging in as Admin]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590520371.png' height='400' width='400'></img></br>]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on Admin module from sidebar]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/navigateToAdmin_1778590532070.png' height='400' width='400'></img></br>]]>
+            </line>
+            <line>
+              <![CDATA[Verifying Admin page is fully loaded]]>
+            </line>
+            <line>
+              <![CDATA[Navigate to Admin test passed successfully.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testNavigateToAdmin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mcpdemo.tests.OrangehrmETE@79ad8b2f]" started-at="2026-05-12T18:25:33 IST" name="tearDown" finished-at="2026-05-12T18:25:33 IST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:mcpdemo.tests.OrangehrmETE@79ad8b2f]" started-at="2026-05-12T18:25:33 IST" name="setup" finished-at="2026-05-12T18:25:36 IST" duration-ms="3113" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webkit]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAddNewUser()[pri:4, instance:mcpdemo.tests.OrangehrmETE@79ad8b2f]" started-at="2026-05-12T18:25:36 IST" name="testAddNewUser" description="Test adding a new user" finished-at="2026-05-12T18:26:41 IST" duration-ms="64913" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Success notification should be displayed expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Success notification should be displayed expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at mcpdemo.tests.OrangehrmETE.testAddNewUser(OrangehrmETE.java:132)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+at java.base/java.lang.Thread.run(Thread.java:1474)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Starting test: Add New User]]>
+            </line>
+            <line>
+              <![CDATA[Logging in as Admin]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590558510.png' height='400' width='400'></img></br>]]>
+            </line>
+            <line>
+              <![CDATA[Navigating to Admin module]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/navigateToAdmin_1778590564429.png' height='400' width='400'></img></br>]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Add button]]>
+            </line>
+            <line>
+              <![CDATA[Adding a new user with generated unique username: Johner1778590571210]]>
+            </line>
+            <line>
+              <![CDATA[Verifying 'Successfully Saved' toast notification]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/toast_not_found_1778590601490.png' height='400' width='400'></img></br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testAddNewUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mcpdemo.tests.OrangehrmETE@79ad8b2f]" started-at="2026-05-12T18:26:41 IST" name="tearDown" finished-at="2026-05-12T18:26:41 IST" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:mcpdemo.tests.OrangehrmETE@79ad8b2f]" started-at="2026-05-12T18:26:41 IST" name="setup" finished-at="2026-05-12T18:26:44 IST" duration-ms="3015" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webkit]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLogout()[pri:5, instance:mcpdemo.tests.OrangehrmETE@79ad8b2f]" started-at="2026-05-12T18:26:44 IST" name="testLogout" description="Test logout functionality" finished-at="2026-05-12T18:28:04 IST" duration-ms="79241" status="FAIL">
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\progress.js:87:26)
+    at Frame.click (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\frameDispatcher.js:152:30)
+    at FrameDispatcher._handleCommand (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:84:40)
+    at DispatcherConnection.dispatch (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:351:39)
+}
+Call log:
+- waiting for locator("a[href*='logout']")
+-   locator resolved to <a role="menuitem" class="oxd-userdropdown-link" hr…>Logout</a>
+- attempting click action
+-   waiting for element to be visible, enabled and stable
+-     element is not stable - waiting...
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   performing click action
+-   click action done
+-   waiting for scheduled navigations to finish
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\progress.js:87:26)
+    at Frame.click (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\frameDispatcher.js:152:30)
+    at FrameDispatcher._handleCommand (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:84:40)
+    at DispatcherConnection.dispatch (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:351:39)
+}
+Call log:
+- waiting for locator("a[href*='logout']")
+-   locator resolved to <a role="menuitem" class="oxd-userdropdown-link" hr…>Logout</a>
+- attempting click action
+-   waiting for element to be visible, enabled and stable
+-     element is not stable - waiting...
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   performing click action
+-   click action done
+-   waiting for scheduled navigations to finish
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:140)
+at com.microsoft.playwright.Locator.click(Locator.java:2348)
+at mcpdemo.pages.DashboardPage.clickLogout(DashboardPage.java:49)
+at mcpdemo.pages.DashboardPage.logout(DashboardPage.java:60)
+at mcpdemo.tests.OrangehrmETE.testLogout(OrangehrmETE.java:146)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\progress.js:87:26)
+    at Frame.click (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\frameDispatcher.js:152:30)
+    at FrameDispatcher._handleCommand (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:84:40)
+    at DispatcherConnection.dispatch (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:351:39)
+}
+Call log:
+- waiting for locator("a[href*='logout']")
+-   locator resolved to <a role="menuitem" class="oxd-userdropdown-link" hr…>Logout</a>
+- attempting click action
+-   waiting for element to be visible, enabled and stable
+-     element is not stable - waiting...
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   performing click action
+-   click action done
+-   waiting for scheduled navigations to finish
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:252)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Starting test: Logout]]>
+            </line>
+            <line>
+              <![CDATA[Logging in as Admin]]>
+            </line>
+            <line>
+              <![CDATA[<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590646382.png' height='400' width='400'></img></br>]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on logout button]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testLogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mcpdemo.tests.OrangehrmETE@79ad8b2f]" started-at="2026-05-12T18:28:04 IST" name="tearDown" finished-at="2026-05-12T18:28:04 IST" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- mcpdemo.tests.OrangehrmETE -->
+    </test> <!-- WebKit Tests -->
+  </suite> <!-- Cross Browser Suite -->
+</testng-results>

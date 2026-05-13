@@ -1,0 +1,331 @@
+<html>
+<head>
+<title>TestNG:  Chrome Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Chrome Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue May 12 18:20:41 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>105 seconds (105442 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='mcpdemo.tests.OrangehrmETE.testAddNewUser()'><b>testAddNewUser</b><br>Test class: mcpdemo.tests.OrangehrmETE<br>Test method: Test adding a new user<br/>
+<a href="#Output-1609884685" onClick='toggleBox("Output-1609884685", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1609884685" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1609884685">
+Starting test: Add New User<br/>
+Logging in as Admin<br/>
+<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590313108.png' height='400' width='400'></img></br><br/>
+Navigating to Admin module<br/>
+<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/navigateToAdmin_1778590316782.png' height='400' width='400'></img></br><br/>
+Clicking Add button<br/>
+Adding a new user with generated unique username: Johner1778590322586<br/>
+Verifying 'Successfully Saved' toast notification<br/>
+</div>
+</td>
+<td><div><pre>com.microsoft.playwright.PlaywrightException: Error {
+  message=&apos;Error: strict mode violation: locator(&quot;.oxd-toast-content-text&quot;) resolved to 2 elements:
+    1) &lt;p data-v-7b563373=&quot;&quot; data-v-35c8fe09=&quot;&quot; class=&quot;oxd…&gt;Success&lt;/p&gt; aka getByText(&quot;Success&quot;, new Page.GetByTextOptions().setExact(true))
+    2) &lt;p data-v-7b563373=&quot;&quot; data-v-35c8fe09=&quot;&quot; class=&quot;oxd…&gt;Successfully Saved&lt;/p&gt; aka getByText(&quot;Successfully Saved&quot;)
+
+  name=&apos;Error
+  stack=&apos;Error: Error: strict mode violation: locator(&quot;.oxd-toast-content-text&quot;) resolved to 2 elements:
+    1) &lt;p data-v-7b563373=&quot;&quot; data-v-35c8fe09=&quot;&quot; class=&quot;oxd…&gt;Success&lt;/p&gt; aka getByText(&quot;Success&quot;, new Page.GetByTextOptions().setExact(true))
+    2) &lt;p data-v-7b563373=&quot;&quot; data-v-35c8fe09=&quot;&quot; class=&quot;oxd…&gt;Successfully Saved&lt;/p&gt; aka getByText(&quot;Successfully Saved&quot;)
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at async LongStandingScope._race (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\utils\manualPromise.js:96:14)
+    at async evaluateExpression (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\javascript.js:241:12)
+    at async C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\frames.js:1409:13
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\frames.js:912:24)
+    at async ProgressController.run (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\progress.js:91:22)
+    at async FrameDispatcher.textContent (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\frameDispatcher.js:173:19)
+    at async LongStandingScope._race (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:86:14)
+    at async DispatcherConnection.dispatch (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:351:22)
+}
+Call log:
+- waiting for locator(&quot;.oxd-toast-content-text&quot;)
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+	at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:566)
+	at com.microsoft.playwright.Locator.textContent(Locator.java:5051)
+	at mcpdemo.pages.AdminPage.getSuccessNotification(AdminPage.java:100)
+	at mcpdemo.tests.OrangehrmETE.testAddNewUser(OrangehrmETE.java:133)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message=&apos;Error: strict mode violation: locator(&quot;.oxd-toast-content-text&quot;) resolved to 2 elements:
+    1) &lt;p data-v-7b563373=&quot;&quot; data-v-35c8fe09=&quot;&quot; class=&quot;oxd…&gt;Success&lt;/p&gt; aka getByText(&quot;Success&quot;, new Page.GetByTextOptions().setExact(true))
+    2) &lt;p data-v-7b563373=&quot;&quot; data-v-35c8fe09=&quot;&quot; class=&quot;oxd…&gt;Successfully Saved&lt;/p&gt; aka getByText(&quot;Successfully Saved&quot;)
+
+  name=&apos;Error
+  stack=&apos;Error: Error: strict mode violation: locator(&quot;.oxd-toast-content-text&quot;) resolved to 2 elements:
+    1) &lt;p data-v-7b563373=&quot;&quot; data-v-35c8fe09=&quot;&quot; class=&quot;oxd…&gt;Success&lt;/p&gt; aka getByText(&quot;Success&quot;, new Page.GetByTextOptions().setExact(true))
+    2) &lt;p data-v-7b563373=&quot;&quot; data-v-35c8fe09=&quot;&quot; class=&quot;oxd…&gt;Successfully Saved&lt;/p&gt; aka getByText(&quot;Successfully Saved&quot;)
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at async LongStandingScope._race (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\utils\manualPromise.js:96:14)
+    at async evaluateExpression (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\javascript.js:241:12)
+    at async C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\frames.js:1409:13
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\frames.js:912:24)
+    at async ProgressController.run (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\progress.js:91:22)
+    at async FrameDispatcher.textContent (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\frameDispatcher.js:173:19)
+    at async LongStandingScope._race (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:86:14)
+    at async DispatcherConnection.dispatch (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:351:22)
+}
+Call log:
+- waiting for locator(&quot;.oxd-toast-content-text&quot;)
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 27 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1609884685", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1609884685'><pre>com.microsoft.playwright.PlaywrightException: Error {
+  message=&apos;Error: strict mode violation: locator(&quot;.oxd-toast-content-text&quot;) resolved to 2 elements:
+    1) &lt;p data-v-7b563373=&quot;&quot; data-v-35c8fe09=&quot;&quot; class=&quot;oxd…&gt;Success&lt;/p&gt; aka getByText(&quot;Success&quot;, new Page.GetByTextOptions().setExact(true))
+    2) &lt;p data-v-7b563373=&quot;&quot; data-v-35c8fe09=&quot;&quot; class=&quot;oxd…&gt;Successfully Saved&lt;/p&gt; aka getByText(&quot;Successfully Saved&quot;)
+
+  name=&apos;Error
+  stack=&apos;Error: Error: strict mode violation: locator(&quot;.oxd-toast-content-text&quot;) resolved to 2 elements:
+    1) &lt;p data-v-7b563373=&quot;&quot; data-v-35c8fe09=&quot;&quot; class=&quot;oxd…&gt;Success&lt;/p&gt; aka getByText(&quot;Success&quot;, new Page.GetByTextOptions().setExact(true))
+    2) &lt;p data-v-7b563373=&quot;&quot; data-v-35c8fe09=&quot;&quot; class=&quot;oxd…&gt;Successfully Saved&lt;/p&gt; aka getByText(&quot;Successfully Saved&quot;)
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at async LongStandingScope._race (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\utils\manualPromise.js:96:14)
+    at async evaluateExpression (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\javascript.js:241:12)
+    at async C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\frames.js:1409:13
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\frames.js:912:24)
+    at async ProgressController.run (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\progress.js:91:22)
+    at async FrameDispatcher.textContent (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\frameDispatcher.js:173:19)
+    at async LongStandingScope._race (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:86:14)
+    at async DispatcherConnection.dispatch (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:351:22)
+}
+Call log:
+- waiting for locator(&quot;.oxd-toast-content-text&quot;)
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+	at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:566)
+	at com.microsoft.playwright.Locator.textContent(Locator.java:5051)
+	at mcpdemo.pages.AdminPage.getSuccessNotification(AdminPage.java:100)
+	at mcpdemo.tests.OrangehrmETE.testAddNewUser(OrangehrmETE.java:133)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message=&apos;Error: strict mode violation: locator(&quot;.oxd-toast-content-text&quot;) resolved to 2 elements:
+    1) &lt;p data-v-7b563373=&quot;&quot; data-v-35c8fe09=&quot;&quot; class=&quot;oxd…&gt;Success&lt;/p&gt; aka getByText(&quot;Success&quot;, new Page.GetByTextOptions().setExact(true))
+    2) &lt;p data-v-7b563373=&quot;&quot; data-v-35c8fe09=&quot;&quot; class=&quot;oxd…&gt;Successfully Saved&lt;/p&gt; aka getByText(&quot;Successfully Saved&quot;)
+
+  name=&apos;Error
+  stack=&apos;Error: Error: strict mode violation: locator(&quot;.oxd-toast-content-text&quot;) resolved to 2 elements:
+    1) &lt;p data-v-7b563373=&quot;&quot; data-v-35c8fe09=&quot;&quot; class=&quot;oxd…&gt;Success&lt;/p&gt; aka getByText(&quot;Success&quot;, new Page.GetByTextOptions().setExact(true))
+    2) &lt;p data-v-7b563373=&quot;&quot; data-v-35c8fe09=&quot;&quot; class=&quot;oxd…&gt;Successfully Saved&lt;/p&gt; aka getByText(&quot;Successfully Saved&quot;)
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at async LongStandingScope._race (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\utils\manualPromise.js:96:14)
+    at async evaluateExpression (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\javascript.js:241:12)
+    at async C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\frames.js:1409:13
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\frames.js:912:24)
+    at async ProgressController.run (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\progress.js:91:22)
+    at async FrameDispatcher.textContent (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\frameDispatcher.js:173:19)
+    at async LongStandingScope._race (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:86:14)
+    at async DispatcherConnection.dispatch (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:351:22)
+}
+Call log:
+- waiting for locator(&quot;.oxd-toast-content-text&quot;)
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 27 more
+</pre></div></td>
+<td>29</td>
+<td>mcpdemo.tests.OrangehrmETE@5d740a0f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='mcpdemo.tests.OrangehrmETE.testInvalidLogin()'><b>testInvalidLogin</b><br>Test class: mcpdemo.tests.OrangehrmETE<br>Test method: Test invalid login scenario<br/>
+<a href="#Output-1371065209" onClick='toggleBox("Output-1371065209", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1371065209" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1371065209">
+Starting test: Invalid Login<br/>
+Navigating to OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login<br/>
+Entering invalid credentials<br/>
+<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithInvalidCredentials_1778590265389.png' height='400' width='400'></img></br><br/>
+Verifying error message is displayed<br/>
+Invalid login test passed successfully.<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>mcpdemo.tests.OrangehrmETE@5d740a0f</td></tr>
+<tr>
+<td title='mcpdemo.tests.OrangehrmETE.testValidLogin()'><b>testValidLogin</b><br>Test class: mcpdemo.tests.OrangehrmETE<br>Test method: Test valid login and dashboard verification<br/>
+<a href="#Output-709901881" onClick='toggleBox("Output-709901881", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-709901881" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-709901881">
+Starting test: Valid Login<br/>
+Navigating to OrangeHRM login page<br/>
+Entering valid credentials<br/>
+<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590282163.png' height='400' width='400'></img></br><br/>
+Verifying redirection to dashboard<br/>
+Verifying Dashboard heading is visible<br/>
+Valid login test passed successfully.<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>mcpdemo.tests.OrangehrmETE@5d740a0f</td></tr>
+<tr>
+<td title='mcpdemo.tests.OrangehrmETE.testNavigateToAdmin()'><b>testNavigateToAdmin</b><br>Test class: mcpdemo.tests.OrangehrmETE<br>Test method: Test navigation to Admin module<br/>
+<a href="#Output-96577242" onClick='toggleBox("Output-96577242", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-96577242" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-96577242">
+Starting test: Navigate to Admin<br/>
+Logging in as Admin<br/>
+<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590296356.png' height='400' width='400'></img></br><br/>
+Clicking on Admin module from sidebar<br/>
+<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/navigateToAdmin_1778590298139.png' height='400' width='400'></img></br><br/>
+Verifying Admin page is fully loaded<br/>
+Navigate to Admin test passed successfully.<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>mcpdemo.tests.OrangehrmETE@5d740a0f</td></tr>
+<tr>
+<td title='mcpdemo.tests.OrangehrmETE.testLogout()'><b>testLogout</b><br>Test class: mcpdemo.tests.OrangehrmETE<br>Test method: Test logout functionality<br/>
+<a href="#Output-612016660" onClick='toggleBox("Output-612016660", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-612016660" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-612016660">
+Starting test: Logout<br/>
+Logging in as Admin<br/>
+<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590344541.png' height='400' width='400'></img></br><br/>
+Clicking on logout button<br/>
+<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/logout_1778590346468.png' height='400' width='400'></img></br><br/>
+Verifying redirection back to login page<br/>
+Logout test passed successfully.<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>mcpdemo.tests.OrangehrmETE@5d740a0f</td></tr>
+</table><p>
+</body>
+</html>

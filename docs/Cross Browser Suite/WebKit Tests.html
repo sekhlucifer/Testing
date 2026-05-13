@@ -1,0 +1,360 @@
+<html>
+<head>
+<title>TestNG:  WebKit Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>WebKit Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue May 12 18:24:25 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>218 seconds (218505 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='mcpdemo.tests.OrangehrmETE.testLogout()'><b>testLogout</b><br>Test class: mcpdemo.tests.OrangehrmETE<br>Test method: Test logout functionality<br/>
+<a href="#Output-1084732547" onClick='toggleBox("Output-1084732547", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1084732547" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1084732547">
+Starting test: Logout<br/>
+Logging in as Admin<br/>
+<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590646382.png' height='400' width='400'></img></br><br/>
+Clicking on logout button<br/>
+</div>
+</td>
+<td><div><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\progress.js:87:26)
+    at Frame.click (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\frameDispatcher.js:152:30)
+    at FrameDispatcher._handleCommand (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:84:40)
+    at DispatcherConnection.dispatch (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:351:39)
+}
+Call log:
+- waiting for locator(&quot;a[href*=&apos;logout&apos;]&quot;)
+-   locator resolved to &lt;a role=&quot;menuitem&quot; class=&quot;oxd-userdropdown-link&quot; hr…&gt;Logout&lt;/a&gt;
+- attempting click action
+-   waiting for element to be visible, enabled and stable
+-     element is not stable - waiting...
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   performing click action
+-   click action done
+-   waiting for scheduled navigations to finish
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:140)
+	at com.microsoft.playwright.Locator.click(Locator.java:2348)
+	at mcpdemo.pages.DashboardPage.clickLogout(DashboardPage.java:49)
+	at mcpdemo.pages.DashboardPage.logout(DashboardPage.java:60)
+	at mcpdemo.tests.OrangehrmETE.testLogout(OrangehrmETE.java:146)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\progress.js:87:26)
+    at Frame.click (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\frameDispatcher.js:152:30)
+    at FrameDispatcher._handleCommand (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:84:40)
+    at DispatcherConnection.dispatch (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:351:39)
+}
+Call log:
+- waiting for locator(&quot;a[href*=&apos;logout&apos;]&quot;)
+-   locator resolved to &lt;a role=&quot;menuitem&quot; class=&quot;oxd-userdropdown-link&quot; hr…&gt;Logout&lt;/a&gt;
+- attempting click action
+-   waiting for element to be visible, enabled and stable
+-     element is not stable - waiting...
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   performing click action
+-   click action done
+-   waiting for scheduled navigations to finish
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:252)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 30 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1084732547", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1084732547'><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\progress.js:87:26)
+    at Frame.click (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\frameDispatcher.js:152:30)
+    at FrameDispatcher._handleCommand (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:84:40)
+    at DispatcherConnection.dispatch (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:351:39)
+}
+Call log:
+- waiting for locator(&quot;a[href*=&apos;logout&apos;]&quot;)
+-   locator resolved to &lt;a role=&quot;menuitem&quot; class=&quot;oxd-userdropdown-link&quot; hr…&gt;Logout&lt;/a&gt;
+- attempting click action
+-   waiting for element to be visible, enabled and stable
+-     element is not stable - waiting...
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   performing click action
+-   click action done
+-   waiting for scheduled navigations to finish
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:140)
+	at com.microsoft.playwright.Locator.click(Locator.java:2348)
+	at mcpdemo.pages.DashboardPage.clickLogout(DashboardPage.java:49)
+	at mcpdemo.pages.DashboardPage.logout(DashboardPage.java:60)
+	at mcpdemo.tests.OrangehrmETE.testLogout(OrangehrmETE.java:146)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\progress.js:87:26)
+    at Frame.click (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\frames.js:995:23)
+    at FrameDispatcher.click (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\frameDispatcher.js:152:30)
+    at FrameDispatcher._handleCommand (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:84:40)
+    at DispatcherConnection.dispatch (C:\Users\Anant\AppData\Local\Temp\playwright-java-11858820416556428511\package\lib\server\dispatchers\dispatcher.js:351:39)
+}
+Call log:
+- waiting for locator(&quot;a[href*=&apos;logout&apos;]&quot;)
+-   locator resolved to &lt;a role=&quot;menuitem&quot; class=&quot;oxd-userdropdown-link&quot; hr…&gt;Logout&lt;/a&gt;
+- attempting click action
+-   waiting for element to be visible, enabled and stable
+-     element is not stable - waiting...
+-   element is visible, enabled and stable
+-   scrolling into view if needed
+-   done scrolling
+-   performing click action
+-   click action done
+-   waiting for scheduled navigations to finish
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:252)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 30 more
+</pre></div></td>
+<td>79</td>
+<td>mcpdemo.tests.OrangehrmETE@79ad8b2f</td></tr>
+<tr>
+<td title='mcpdemo.tests.OrangehrmETE.testAddNewUser()'><b>testAddNewUser</b><br>Test class: mcpdemo.tests.OrangehrmETE<br>Test method: Test adding a new user<br/>
+<a href="#Output-743897583" onClick='toggleBox("Output-743897583", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-743897583" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-743897583">
+Starting test: Add New User<br/>
+Logging in as Admin<br/>
+<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590558510.png' height='400' width='400'></img></br><br/>
+Navigating to Admin module<br/>
+<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/navigateToAdmin_1778590564429.png' height='400' width='400'></img></br><br/>
+Clicking Add button<br/>
+Adding a new user with generated unique username: Johner1778590571210<br/>
+Verifying 'Successfully Saved' toast notification<br/>
+<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/toast_not_found_1778590601490.png' height='400' width='400'></img></br><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Success notification should be displayed expected [true] but found [false]
+	at mcpdemo.tests.OrangehrmETE.testAddNewUser(OrangehrmETE.java:132)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace743897583", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace743897583'><pre>java.lang.AssertionError: Success notification should be displayed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at mcpdemo.tests.OrangehrmETE.testAddNewUser(OrangehrmETE.java:132)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>64</td>
+<td>mcpdemo.tests.OrangehrmETE@79ad8b2f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='mcpdemo.tests.OrangehrmETE.testValidLogin()'><b>testValidLogin</b><br>Test class: mcpdemo.tests.OrangehrmETE<br>Test method: Test valid login and dashboard verification<br/>
+<a href="#Output-1743987379" onClick='toggleBox("Output-1743987379", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1743987379" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1743987379">
+Starting test: Valid Login<br/>
+Navigating to OrangeHRM login page<br/>
+Entering valid credentials<br/>
+<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590502296.png' height='400' width='400'></img></br><br/>
+Verifying redirection to dashboard<br/>
+Verifying Dashboard heading is visible<br/>
+Valid login test passed successfully.<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>mcpdemo.tests.OrangehrmETE@79ad8b2f</td></tr>
+<tr>
+<td title='mcpdemo.tests.OrangehrmETE.testNavigateToAdmin()'><b>testNavigateToAdmin</b><br>Test class: mcpdemo.tests.OrangehrmETE<br>Test method: Test navigation to Admin module<br/>
+<a href="#Output-1818430019" onClick='toggleBox("Output-1818430019", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1818430019" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1818430019">
+Starting test: Navigate to Admin<br/>
+Logging in as Admin<br/>
+<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithValidCredentials_1778590520371.png' height='400' width='400'></img></br><br/>
+Clicking on Admin module from sidebar<br/>
+<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/navigateToAdmin_1778590532070.png' height='400' width='400'></img></br><br/>
+Verifying Admin page is fully loaded<br/>
+Navigate to Admin test passed successfully.<br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>mcpdemo.tests.OrangehrmETE@79ad8b2f</td></tr>
+<tr>
+<td title='mcpdemo.tests.OrangehrmETE.testInvalidLogin()'><b>testInvalidLogin</b><br>Test class: mcpdemo.tests.OrangehrmETE<br>Test method: Test invalid login scenario<br/>
+<a href="#Output-78605745" onClick='toggleBox("Output-78605745", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-78605745" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-78605745">
+Starting test: Invalid Login<br/>
+Navigating to OrangeHRM login page: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login<br/>
+Entering invalid credentials<br/>
+<br><img src='file:///C:/Users/Anant/eclipse-workspace/mcpdemo/target/screenshots/loginWithInvalidCredentials_1778590483021.png' height='400' width='400'></img></br><br/>
+Verifying error message is displayed<br/>
+Invalid login test passed successfully.<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>mcpdemo.tests.OrangehrmETE@79ad8b2f</td></tr>
+</table><p>
+</body>
+</html>
